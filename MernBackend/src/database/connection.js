@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://rashid:GWMwUJFCRwtbdznF@cluster0.wpm18.mongodb.net/Get-Registration-Data" ,{
+const DB=process.env.DATABASE
+mongoose.connect("DB" ,{
     useNewUrlParser:true , useUnifiedTopology: true , useCreateIndex:true})
 .then(() => {
     console.log('connection succ');
